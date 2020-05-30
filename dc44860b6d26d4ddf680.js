@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{81:function(t,e,s){"use strict";s.r(e);var i=function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"about"},[this._v("About")])};i._withStripped=!0;var n={name:"About"},a=s(4),c=Object(a.a)(n,i,[],!1,null,"c3cc29ce",null);c.options.__file="src/admin/pages/About.vue";e.default=c.exports}}]);
