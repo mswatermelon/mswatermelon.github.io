@@ -109,6 +109,9 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
+.btn:focus {
+  outline: none;
+}
 .btn--white {
   color: #365A49;
   background-color: #ffffff;
