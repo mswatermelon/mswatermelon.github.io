@@ -1,0 +1,15 @@
+.secondary-content__list,
+.secondary-content__item {
+  display: flex;
+}
+
+.secondary-content__item {
+  display: flex;
+  width: 166px;
+  margin-right: 8px;
+  align-items: flex-start;
+}
+
+.secondary-content__icon {
+  margin-right: 11px;
+}

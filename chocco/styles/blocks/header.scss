@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    margin-bottom: 84px;
+}
+
+.header__logo {
+    font-family: Alegreya Sans, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.header__btns {
+    @include tablets {
+        display: none;
+    }
+}
+
+.header__btn {
+    display: none;
+    @include tablets {
+        display: flex;
+    }
+}
+
+.header__phone-number {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header__icon {
+    margin-right: 6px;
+}

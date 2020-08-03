@@ -1,0 +1,30 @@
+.main-section {
+  padding: 24px 0 50px;
+  background: url('../images/content/pattern.png') right bottom no-repeat, $main-section-color;
+  font-family: Alegreya Sans, sans-serif;
+  position: relative;
+
+  &:before {
+    content: '';
+    background: url('../images/content/bars.png') center center no-repeat;
+    position: absolute;
+    width: 520px;
+    height: 644px;
+    right: 11px;
+    top: 55px;
+  }
+
+  &:after {
+    content: '';
+    background: url('../images/content/leave.png') center center no-repeat;
+    position: absolute;
+    width: 59px;
+    height: 112px;
+    left: 37px;
+    top: 571px;
+  }
+}
+
+.main-section__container {
+  position: relative;
+}

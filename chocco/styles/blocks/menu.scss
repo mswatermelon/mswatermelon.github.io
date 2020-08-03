@@ -1,0 +1,25 @@
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    margin-right: 27px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include desktop {
+        margin-right: 27px;
+    }
+
+    @include tablets {
+        margin-bottom: 32px;
+    }
+}
+
+.menu__link {
+    font-size: 18px;
+    line-height: 0;
+    text-decoration: none;
+}

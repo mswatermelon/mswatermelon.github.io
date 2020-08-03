@@ -1,0 +1,24 @@
+.why-section {
+  padding: 102px 0 112px;
+  background: $why-section-color;
+  font-family: Alegreya Sans, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url('../images/content/grey-leave.png') left top 57% no-repeat;
+
+  &:after {
+    content: '';
+    background: url('../images/content/rasberry.png') center center no-repeat;
+    position: absolute;
+    width: 161px;
+    height: 315px;
+    left: -2px;
+    bottom: -108px;
+  }
+}
+
+.why-section__container {
+  position: relative;
+}
