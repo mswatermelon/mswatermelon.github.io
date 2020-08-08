@@ -115,6 +115,7 @@ img {
 .btn--white {
   color: #365A49;
   background-color: #ffffff;
+  transition: color 300ms linear, background-color 300ms linear;
 }
 .btn--white:hover {
   color: #ffffff;
@@ -123,6 +124,7 @@ img {
 .btn--green {
   color: #ffffff;
   background-color: #365A49;
+  transition: color 300ms linear, background-color 300ms linear;
 }
 .btn--green:hover {
   color: #365A49;
@@ -132,6 +134,7 @@ img {
   background-color: transparent;
   color: #000000;
   text-transform: none;
+  transition: color 300ms linear, background-color 300ms linear;
 }
 .btn--transparent:hover {
   color: #365A49;
@@ -200,6 +203,8 @@ img {
   font-family: Alegreya Sans, sans-serif;
   font-size: 36px;
   font-weight: 400;
+  text-transform: uppercase;
+  fill: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -221,6 +226,13 @@ img {
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+.header__phone-number:before {
+  content: "";
+  background: url("../images/icons/phone.svg") center center no-repeat;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
 }
 
 .header__icon {
@@ -305,6 +317,7 @@ img {
 
 .main-content__button {
   border: none;
+  display: inline-block;
 }
 
 .secondary-content__list,
@@ -321,6 +334,9 @@ img {
 
 .secondary-content__icon {
   margin-right: 11px;
+  width: 41px;
+  height: 41px;
+  fill: #ffffff;
 }
 
 .why-section {
@@ -505,7 +521,7 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
-  display: block;
+  display: contents;
 }
 
 .interactive-avatar__image {

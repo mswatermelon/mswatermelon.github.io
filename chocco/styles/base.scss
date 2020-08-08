@@ -107,6 +107,7 @@ img {
   &--white {
     color: $button-green;
     background-color: #ffffff;
+    transition: color 300ms linear, background-color 300ms linear;
 
     &:hover {
       color: #ffffff;
@@ -117,6 +118,7 @@ img {
   &--green {
     color: #ffffff;
     background-color: $button-green;
+    transition: color 300ms linear, background-color 300ms linear;
 
     &:hover {
       color: $button-green;
@@ -128,6 +130,7 @@ img {
     background-color: transparent;
     color: #000000;
     text-transform: none;
+    transition: color 300ms linear, background-color 300ms linear;
 
     &:hover {
       color: $button-green;
