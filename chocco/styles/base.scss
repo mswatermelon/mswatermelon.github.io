@@ -1,9 +1,12 @@
 html {
-  @include desktop {
-    font-size: 15px;
-  }
+  font-size: $base-font-size;
+
   @include tablets {
-    font-size: 14px;
+    font-size: $base-font-size - 1px;
+  }
+
+  @include phablets {
+    font-size: $base-font-size - 2px;
   }
 }
 body,
@@ -13,7 +16,7 @@ html {
 
 body {
   font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: rem(16px);
   line-height: 1.42;
   color: #666666;
   -webkit-font-smoothing: antialiased;
@@ -28,10 +31,10 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1100px;
-  padding: 0 80px;
+  width: 95%;
+  max-width: $base-container-size;
 
-  @include phones {
+  @include phablets {
     width: 85%;
   }
 }
@@ -42,7 +45,7 @@ body {
 
 .fullscreen-section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 button {
@@ -92,11 +95,11 @@ img {
 }
 
 .btn {
-  padding: 21px 41px;
+  padding: rem(21px) rem(41px);
   font-weight: 800;
-  font-size: 19px;
+  font-size: rem(19px);
   line-height: 1;
-  border-radius: 100px;
+  border-radius: rem(100px);
   text-transform: uppercase;
   text-decoration: none;
 
@@ -139,7 +142,8 @@ img {
 }
 
 .section {
-  padding: 150px 0;
+  font-family: Alegreya Sans, sans-serif;
+  padding: rem(150px) 0;
 
   &--green {
     color: $button-green;
@@ -151,9 +155,9 @@ img {
 }
 
 .section__header {
-  font-size: 48px;
+  font-size: rem($x-large-font-size);
   font-weight: bold;
-  line-height: 48px;
+  line-height: rem(48px);
 
   @include phablets {
     text-align: center;
@@ -162,30 +166,30 @@ img {
 
 .section__title {
   text-align: center;
-  font-size: 48px;
+  font-size: rem($x-large-font-size);
   font-weight: bold;
-  margin-bottom: 60px;
+  margin-bottom: rem(60px);
   text-transform: uppercase;
   color: #000000;
 }
 
 .medium-text {
-  font-size: $medium-font-size;
-  line-height: $medium-line-height;
+  font-size: rem($medium-font-size);
+  line-height: rem($medium-line-height);
 }
 
 .x-medium-text {
-  font-size: $x-medium-font-size;
-  line-height: $x-medium-line-height;
+  font-size: rem($x-medium-font-size);
+  line-height: rem($x-medium-line-height);
 }
 
 .small-text {
-  font-size: $small-font-size;
-  line-height: $small-line-height;
+  font-size: rem($small-font-size);
+  line-height: rem($small-line-height);
 }
 
 .h1 {
   font-weight: bold;
-  font-size: $x-large-font-size;
-  line-height: $x-large-line-height;
+  font-size: rem($x-large-font-size);
+  line-height: rem($x-large-line-height);
 }

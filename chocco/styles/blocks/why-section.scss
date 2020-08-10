@@ -1,5 +1,5 @@
 .why-section {
-  padding: 102px 0 112px;
+  padding: rem(102px) 0 rem(112px);
   background: $why-section-color;
   font-family: Alegreya Sans, sans-serif;
   position: relative;
@@ -8,14 +8,22 @@
   justify-content: center;
   background: url('../images/content/grey-leave.png') left top 57% no-repeat;
 
+  @include tablets {
+    background-position: left top 7%;
+  }
+
+  @include phablets {
+    background: none;
+  }
+
   &:after {
     content: '';
     background: url('../images/content/rasberry.png') center center no-repeat;
     position: absolute;
-    width: 161px;
-    height: 315px;
-    left: -2px;
-    bottom: -108px;
+    width: rem(161px);
+    height: rem(315px);
+    left: rem(-2px);
+    bottom: rem(-108px);
   }
 }
 

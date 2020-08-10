@@ -1,21 +1,44 @@
 .main-content {
-  margin-bottom: 64px;
-  width: 353px;
+  margin-bottom: rem(64px);
+  width: rem(353px);
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:before {
+      content: "";
+      background: url('../images/content/bars_768.png') center center / contain no-repeat;
+      width: rem(345px);
+      height: rem(349px);
+      margin-bottom: rem(16px);
+    }
+  }
 }
 
 .main-content__title {
   text-transform: uppercase;
-}
-
-.main-content__title {
   font-weight: bold;
-  font-size: 48px;
-  line-height: 58px;
-  margin-bottom: 17px;
+  font-size: rem($x-large-font-size);
+  line-height: rem($x-large-line-height);
+  margin-bottom: rem(17px);
 }
 
 .main-content__text {
-  margin-bottom: 32px;
+  margin-bottom: rem(32px);
+
+  @include tablets {
+    padding: 0 25%;
+  }
+
+  @include phablets {
+    padding: 0 15%;
+  }
 }
 
 .main-content__button {

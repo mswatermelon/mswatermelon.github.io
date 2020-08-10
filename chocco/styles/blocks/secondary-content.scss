@@ -1,3 +1,9 @@
+.secondary-content {
+  @include tablets {
+    display: none;
+  }
+}
+
 .secondary-content__list,
 .secondary-content__item {
   display: flex;
@@ -5,14 +11,14 @@
 
 .secondary-content__item {
   display: flex;
-  width: 166px;
-  margin-right: 8px;
+  width: rem(166px);
+  margin-right: rem(8px);
   align-items: flex-start;
 }
 
 .secondary-content__icon {
-  margin-right: 11px;
-  width: 41px;
-  height: 41px;
+  margin-right: rem(11px);
+  width: rem(41px);
+  height: rem(41px);
   fill: $why-section-color;
 }

@@ -1,32 +1,49 @@
 .reviews__display {
-  padding: 50px 45px 54px;
+  padding: rem(50px) rem(45px) rem(54px);
   overflow: hidden;
   position: relative;
+
+  @include phablets {
+    padding-right: 0;
+    padding-left: 0;
+  }
 
   &:before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
-    top: -15px;
+    top: rem(-15px);
     position: absolute;
     background: #ffffff;
   }
 }
 
 .reviews__display-inner {
-  background: url("../images/content/branch.png") right 22px no-repeat, #f8faf9;
+  background: url("../images/content/branch.png") right rem(22px) no-repeat, #f8faf9;
   display: flex;
-  margin-bottom: 15px;
-  padding: 42px 142px 42px 42px;
+  margin-bottom: rem(15px);
+  padding: rem(42px) rem(142px) rem(42px) rem(42px);
+
+  @include tablets {
+    padding-right: rem(42px);
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: rem(254px);
+  height: rem(260px);
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 
 .reviews__avatar-img {
@@ -40,25 +57,25 @@
 }
 
 .reviews__text {
-  margin-bottom: 36px;
+  margin-bottom: rem(36px);
 }
 
 .reviews__title {
-  font-size: 30px;
+  font-size: rem($l-medium-font-size);
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
   color: #000000;
 }
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
+  margin-left: rem(20px);
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: rem($x-medium-font-size);
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
   color: black;
 }
 

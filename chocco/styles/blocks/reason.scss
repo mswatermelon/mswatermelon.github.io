@@ -1,21 +1,31 @@
 .reason {
   text-align: center;
+
+  @include phablets {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .reason__illustration {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: rem(126px);
+  height: rem(126px);
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include phablets {
+    margin-bottom: 0;
+    margin-right: rem(20px);
+  }
 }
 
 .reason__icon {
-  width: 75px;
-  height: 69px;
+  width: rem(75px);
+  height: rem(69px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,8 +34,8 @@
 
 .reason__title {
   font-weight: bold;
-  font-size: 27px;
-  line-height: 32px;
-  margin-bottom: 18px;
+  font-size: rem($m-small-font-size);
+  line-height: rem(32px);
+  margin-bottom: rem(18px);
   color: #000000;
 }

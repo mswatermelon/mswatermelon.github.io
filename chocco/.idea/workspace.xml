@@ -20,7 +20,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mswatermelon-portfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
@@ -57,7 +57,8 @@
       <updated>1595959634117</updated>
       <workItem from="1595959635606" duration="17159000" />
       <workItem from="1596364235636" duration="32341000" />
-      <workItem from="1596748394888" duration="9406000" />
+      <workItem from="1596748394888" duration="20308000" />
+      <workItem from="1597006361169" duration="11384000" />
     </task>
     <servers />
   </component>

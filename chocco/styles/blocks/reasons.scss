@@ -1,19 +1,34 @@
 .reasons__list {
   display: flex;
+
+  @include phablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .reasons__item {
   flex: 1;
   padding: 0 3%;
   position: relative;
-  width: 276px;
+  width: rem(276px);
+
+  @include phablets {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 19px ;
+  }
 
   &:before {
     content: url("../images/content/shapes.png");
     position: absolute;
-    top: 30px;
+    top: rem(30px);
     right: 0;
     transform: translate(50%);
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &:first-child {

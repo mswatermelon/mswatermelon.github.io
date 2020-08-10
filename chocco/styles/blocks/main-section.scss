@@ -1,27 +1,37 @@
 .main-section {
-  padding: 24px 0 50px;
+  padding: rem(24px) 0 rem(50px);
   background: url('../images/content/pattern.png') right bottom no-repeat, $main-section-color;
   font-family: Alegreya Sans, sans-serif;
   position: relative;
+
+  @include tablets {
+    background-position: right bottom 90%;
+  }
+
+  &:before, &:after {
+    @include tablets {
+      display: none;
+    }
+  }
 
   &:before {
     content: '';
     background: url('../images/content/bars.png') center center no-repeat;
     position: absolute;
-    width: 520px;
-    height: 644px;
-    right: 11px;
-    top: 55px;
+    width: rem(520px);
+    height: rem(644px);
+    right: rem(11px);
+    top: rem(55px);
   }
 
   &:after {
     content: '';
     background: url('../images/content/leave.png') center center no-repeat;
     position: absolute;
-    width: 59px;
-    height: 112px;
-    left: 37px;
-    top: 571px;
+    width: rem(59px);
+    height: rem(112px);
+    left: rem(37px);
+    top: rem(571px);
   }
 }
 

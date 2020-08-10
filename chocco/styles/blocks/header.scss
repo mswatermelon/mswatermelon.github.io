@@ -1,14 +1,18 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    line-height: 30px;
-    margin-bottom: 84px;
+    align-items: flex-start;
+    line-height: rem(30px);
+    margin-bottom: rem(84px);
+
+    @include tablets {
+        margin-bottom: 0;
+    }
 }
 
 .header__logo {
     font-family: Alegreya Sans, sans-serif;
-    font-size: 36px;
+    font-size: rem($large-font-size);
     font-weight: 400;
     text-transform: uppercase;
     fill: $why-section-color;
@@ -27,20 +31,15 @@
     }
 }
 
-.header__phone-number {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+.phone-number.header__phone-number {
+    white-space: nowrap;
+    margin-top: 5px;
 
-    &:before {
-        content: '';
-        background: url('../images/icons/phone.svg') center center no-repeat;
-        width: 14px;
-        height: 14px;
-        margin-right: 6px;
+    @include tablets {
+        display: none;
     }
 }
 
 .header__icon {
-    margin-right: 6px;
+    margin-right: rem(6px);
 }

@@ -3,8 +3,10 @@
 @import "fonts";
 @import "mixins";
 @import "base";
+@import "blocks/phone-number";
 @import "blocks/header";
 @import "blocks/menu";
+@import "blocks/hamburger";
 @import "blocks/main-section";
 @import "blocks/main-content";
 @import "blocks/secondary-content";
@@ -19,3 +21,6 @@
 @import "blocks/form";
 @import "blocks/radio";
 @import "blocks/fixed-menu";
+@import "blocks/map-section";
+@import "blocks/footer";
+@import "blocks/socials";
