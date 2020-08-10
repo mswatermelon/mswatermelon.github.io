@@ -16,9 +16,14 @@
   align-items: flex-start;
 }
 
-.secondary-content__icon {
+.secondary-content__image {
   margin-right: rem(11px);
   width: rem(41px);
   height: rem(41px);
+}
+
+.secondary-content__icon {
   fill: $why-section-color;
+  width: rem(41px);
+  height: rem(41px);
 }

@@ -208,6 +208,8 @@ img {
 }
 
 .phone-number__icon {
+  width: 0.7777777778rem;
+  height: 0.8333333333rem;
   fill: #ffffff;
 }
 
@@ -237,7 +239,8 @@ img {
   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
-  fill: #ffffff;
+  width: 2.9444444444rem;
+  height: 2.1111111111rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -266,7 +269,9 @@ img {
 }
 
 .header__icon {
-  margin-right: 0.3333333333rem;
+  width: 2.9444444444rem;
+  height: 2.1111111111rem;
+  fill: #ffffff;
 }
 
 .menu {
@@ -363,6 +368,11 @@ img {
 .main-section__container {
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .main-section__container {
+    height: 100%;
+  }
+}
 
 .main-content {
   margin-bottom: 3.5555555556rem;
@@ -371,6 +381,7 @@ img {
 @media screen and (max-width: 768px) {
   .main-content {
     width: 100%;
+    height: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -432,11 +443,16 @@ img {
   align-items: flex-start;
 }
 
-.secondary-content__icon {
+.secondary-content__image {
   margin-right: 0.6111111111rem;
   width: 2.2777777778rem;
   height: 2.2777777778rem;
+}
+
+.secondary-content__icon {
   fill: #ffffff;
+  width: 2.2777777778rem;
+  height: 2.2777777778rem;
 }
 
 .why-section {
@@ -524,8 +540,8 @@ img {
 }
 
 .reason__icon {
-  width: 4.1666666667rem;
-  height: 3.8333333333rem;
+  width: 3.7777777778rem;
+  height: 3.7777777778rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -976,7 +992,8 @@ img {
 }
 
 .socials__item {
-  width: 20px;
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
   margin-right: 0.7777777778rem;
 }
 .socials__item:last-child {
@@ -984,6 +1001,8 @@ img {
 }
 
 .socials__icon {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
   fill: #B3B3B3;
 }
 

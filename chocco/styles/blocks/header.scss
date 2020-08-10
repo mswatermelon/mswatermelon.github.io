@@ -15,7 +15,8 @@
     font-size: rem($large-font-size);
     font-weight: 400;
     text-transform: uppercase;
-    fill: $why-section-color;
+    width: rem(53px);
+    height: rem(38px);
 }
 
 .header__btns {
@@ -41,5 +42,7 @@
 }
 
 .header__icon {
-    margin-right: rem(6px);
+    width: rem(53px);
+    height: rem(38px);
+    fill: $why-section-color;
 }

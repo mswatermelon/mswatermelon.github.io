@@ -37,4 +37,8 @@
 
 .main-section__container {
   position: relative;
+
+  @include tablets {
+    height: 100%;
+  }
 }
