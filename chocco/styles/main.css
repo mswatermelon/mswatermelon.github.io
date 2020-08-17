@@ -316,6 +316,8 @@ img {
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  background-color: transparent;
+  padding: 0;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -328,6 +330,7 @@ img {
   background: #ffffff;
   height: 4px;
   border-radius: 10px;
+  width: 100%;
 }
 
 .main-section {
@@ -542,10 +545,7 @@ img {
 .reason__icon {
   width: 3.7777777778rem;
   height: 3.7777777778rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(40%);
 }
 
 .reason__title {
@@ -1000,17 +1000,16 @@ img {
   margin-right: 0;
 }
 
-.socials__icon {
-  width: 1.1111111111rem;
-  height: 1.1111111111rem;
+.socials__link {
   fill: #B3B3B3;
+  transition: fill 300ms;
 }
-
-.socials__icon--active {
-  transition: fill 300ms linear;
+.socials__link :hover {
+  cursor: pointer;
   fill: #000000;
 }
 
-.socials__item--active {
-  fill: black;
+.socials__icon {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
 }

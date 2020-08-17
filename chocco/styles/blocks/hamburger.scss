@@ -4,6 +4,8 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  background-color: transparent;
+  padding: 0;
 
   @include tablets {
     display: inline-flex;
@@ -15,4 +17,5 @@
   background: $why-section-color;
   height: 4px;
   border-radius: 10px;
+  width: 100%;
 }

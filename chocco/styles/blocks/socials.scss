@@ -12,17 +12,17 @@
   }
 }
 
+.socials__link {
+  fill: #B3B3B3;
+  transition: fill 300ms;
+
+  :hover {
+    cursor: pointer;
+    fill: #000000;
+  }
+}
+
 .socials__icon {
   width: rem(20px);
   height: rem(20px);
-  fill: #B3B3B3;
-}
-
-.socials__icon--active {
-  transition: fill 300ms linear;
-  fill: #000000;
-}
-
-.socials__item--active {
-  fill: black;
 }
