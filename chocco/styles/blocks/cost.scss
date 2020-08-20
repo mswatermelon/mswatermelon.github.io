@@ -1,0 +1,23 @@
+.cost {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: rem(24px);
+  }
+
+  &__value {
+    font-size: rem(60px);
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #151515;
+  }
+
+  &__cost {
+    margin-right: rem(13px);
+
+    @include tablets {
+      margin-right: rem(30px);
+    }
+  }
+}

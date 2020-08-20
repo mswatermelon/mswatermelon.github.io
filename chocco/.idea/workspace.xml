@@ -12,6 +12,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="SCSS File" />
       </list>
     </option>
@@ -20,17 +21,17 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles/blocks" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\v.aristarkhova\src\loftschool\chocco\styles\blocks" />
       <recent name="C:\Users\v.aristarkhova\src\loftschool\chocco\styles" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\v.aristarkhova\src\loftschool\chocco\styles" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\v.aristarkhova\src\loftschool\chocco\styles\blocks" />
+      <recent name="C:\Users\v.aristarkhova\src\loftschool\chocco\styles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -58,7 +59,10 @@
       <workItem from="1595959635606" duration="17159000" />
       <workItem from="1596364235636" duration="32341000" />
       <workItem from="1596748394888" duration="20308000" />
-      <workItem from="1597006361169" duration="22269000" />
+      <workItem from="1597006361169" duration="25020000" />
+      <workItem from="1597684713535" duration="21372000" />
+      <workItem from="1597773733161" duration="14213000" />
+      <workItem from="1597854397200" duration="1740000" />
     </task>
     <servers />
   </component>

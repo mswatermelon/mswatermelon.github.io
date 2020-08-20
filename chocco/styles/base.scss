@@ -23,6 +23,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.body--active-menu{
+  overflow: hidden;
+}
+
 .wrapper {
   overflow: hidden;
   min-height: 100%;
@@ -125,6 +129,17 @@ img {
 
     &:hover {
       color: $button-green;
+      background-color: #ffffff;
+    }
+  }
+
+  &--light-green {
+    color: #ffffff;
+    background-color: #497870;
+    transition: color 300ms linear, background-color 300ms linear;
+
+    &:hover {
+      color: #497870;
       background-color: #ffffff;
     }
   }

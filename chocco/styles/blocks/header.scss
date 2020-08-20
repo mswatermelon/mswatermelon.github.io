@@ -27,6 +27,7 @@
 
 .header__btn {
     display: none;
+
     @include tablets {
         display: flex;
     }

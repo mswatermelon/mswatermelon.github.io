@@ -16,6 +16,7 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: rem(20px);
+  flex-shrink: 0;
 
   @include phablets {
     margin-bottom: 0;
@@ -27,6 +28,10 @@
   width: rem(68px);
   height: rem(68px);
   transform: translateY(40%);
+
+  @include phablets {
+    transform: translate(45%, 40%);
+  }
 }
 
 .reason__title {
