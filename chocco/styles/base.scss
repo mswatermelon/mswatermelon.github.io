@@ -208,3 +208,15 @@ img {
   font-size: rem($x-large-font-size);
   line-height: rem($x-large-line-height);
 }
+
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  background: unset;
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.bx-viewport {
+  height: 100% !important;
+}

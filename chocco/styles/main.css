@@ -208,6 +208,18 @@ img {
   line-height: 3.2222222222rem;
 }
 
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  background: unset;
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.bx-viewport {
+  height: 100% !important;
+}
+
 .phone-number {
   display: flex;
   align-items: center;
@@ -392,7 +404,7 @@ img {
 
 .main-section {
   padding: 1.3333333333rem 0 2.7777777778rem;
-  background: url("../images/content/pattern.png") right bottom no-repeat, #61C4D9;
+  background: url("../images/content/pattern.png") right bottom no-repeat, #61c4d9;
   font-family: Alegreya Sans, sans-serif;
   position: relative;
 }
@@ -696,13 +708,26 @@ img {
 
 .reviews__display-inner {
   background: url("../images/content/branch.png") right 1.2222222222rem no-repeat, #f8faf9;
-  display: flex;
   margin-bottom: 0.8333333333rem;
   padding: 2.3333333333rem 7.8888888889rem 2.3333333333rem 2.3333333333rem;
+  min-height: 19.1111111111rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__display-inner {
     padding-right: 2.3333333333rem;
+  }
+}
+
+.reviews__list {
+  position: relative;
+}
+
+.reviews__item {
+  position: absolute;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .reviews__item {
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -731,13 +756,15 @@ img {
 }
 
 .reviews__text {
-  margin-bottom: 2rem;
+  margin-bottom: 1.4444444444rem;
 }
 
 .reviews__title {
-  font-size: 1.6666666667rem;
+  font-size: 1.5rem;
+  line-height: 1.7777777778rem;
   font-weight: bold;
-  margin-bottom: 1.2222222222rem;
+  margin-top: 1.5555555556rem;
+  margin-bottom: 0.6666666667rem;
   color: #000000;
 }
 
@@ -758,6 +785,13 @@ img {
   justify-content: center;
 }
 
+.reviews__item {
+  opacity: 0;
+}
+.reviews__item--active {
+  opacity: 1;
+}
+
 .interactive-avatar {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
@@ -765,8 +799,9 @@ img {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  transition: border-color 300ms;
 }
-.interactive-avatar--active {
+.interactive-avatar:hover, .interactive-avatar--active {
   border-color: #0f5a47;
 }
 
@@ -799,6 +834,7 @@ img {
   height: 17.8333333333rem;
   left: 0;
   bottom: -8.7222222222rem;
+  z-index: 1;
 }
 
 .reviews-section__title {
@@ -827,7 +863,7 @@ img {
 }
 .form-section:before {
   content: "";
-  background: url("../images/content/blackberry.png") center center no-repeat;
+  background: url("../images/content/blueberry.png") center center no-repeat;
   position: absolute;
   width: 2.6111111111rem;
   height: 2.6666666667rem;
@@ -893,6 +929,9 @@ img {
   width: 100%;
   padding: 1rem 0.8888888889rem;
   border: 0.1666666667rem solid transparent;
+}
+.form__input--error {
+  border-color: #8B0000;
 }
 @media screen and (max-width: 768px) {
   .form__input {
@@ -1291,6 +1330,9 @@ img {
   margin: 0 auto;
   overflow: hidden;
   max-width: 61.1111111111rem;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .slider__container {
@@ -1303,6 +1345,14 @@ img {
   flex-grow: 0;
   flex-shrink: 0;
   position: relative;
+}
+.slider__left, .slider__right {
+  background-color: unset;
+  padding: 0;
+  z-index: 1;
+}
+.slider__left:focus, .slider__right:focus {
+  outline: none;
 }
 .slider__left {
   position: absolute;
@@ -1439,6 +1489,7 @@ img {
 .slider__description-items {
   display: flex;
   flex-direction: column;
+  max-width: 20.2777777778rem;
 }
 @media screen and (max-width: 768px) {
   .slider__description-items {
@@ -1479,4 +1530,163 @@ img {
 }
 .specifications__item {
   text-align: left;
+}
+
+.media-section {
+  position: relative;
+  padding: 3.4444444444rem 0;
+  background-color: #F8FAF9;
+}
+.media-section:after {
+  content: "";
+  position: absolute;
+  width: 7.5555555556rem;
+  height: 17.8333333333rem;
+  left: 0;
+  bottom: -8.7222222222rem;
+}
+
+.media-section__title {
+  margin-bottom: 0;
+}
+
+.about-team__list {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .about-team__list {
+    flex-direction: column;
+  }
+}
+
+.about-team__item {
+  margin-right: 1.1111111111rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+.about-team__item--active .about-team__btn {
+  transform: rotate(180deg);
+}
+.about-team__item:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .about-team__item {
+    margin-bottom: 16px;
+  }
+  .about-team__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-team__description {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms;
+}
+.about-team__description--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-team__title {
+  background-color: unset;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0.4444444444rem;
+  font-weight: bold;
+}
+.about-team__title:focus {
+  outline: none;
+}
+
+.about_team__role {
+  margin-bottom: 0.2222222222rem;
+  font-weight: 600;
+}
+.about_team__role--column {
+  font-weight: bold;
+}
+
+.about-team__name {
+  margin-right: 0.2222222222rem;
+}
+.about-team__name:last-child {
+  margin-right: 0;
+}
+
+.about-team__btn {
+  width: 0.4444444444rem;
+  height: 0.4444444444rem;
+  fill: #365A49;
+}
+
+.about-team__avatar {
+  margin-bottom: 1.1666666667rem;
+  min-height: 16.1111111111rem;
+}
+
+.about_team__characteristic {
+  width: 11.1111111111rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .about-team__desktop {
+    display: none;
+  }
+}
+
+.about-team__mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .about-team__mobile {
+    display: block;
+  }
+}
+
+.team-section {
+  font-family: Alegreya Sans, sans-serif;
+  position: relative;
+}
+.team-section:after {
+  content: "";
+  background: url("../images/content/strawberry.png") center center no-repeat;
+  position: absolute;
+  width: 5.7777777778rem;
+  height: 6.3333333333rem;
+  left: 1.7777777778rem;
+  bottom: -1.7777777778rem;
+}
+
+.modal {
+  display: none;
+}
+.modal--error .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  background-color: #ffffff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 18px;
+  color: #000000;
 }

@@ -1,0 +1,9 @@
+{
+  "error": {
+    "domain": "va-deployer",
+    "code": "tmPostTask",
+    "reason": "tmPostTask"
+  },
+  "code": "",
+  "HTTPStatus": 502
+}

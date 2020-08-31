@@ -43,6 +43,10 @@
   padding: rem(18px) rem(16px);
   border: rem(3px) solid transparent;
 
+  &--error {
+    border-color: #8B0000;
+  }
+
   @include tablets {
     height: rem(36px);
   }

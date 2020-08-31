@@ -1,0 +1,18 @@
+.media-section {
+  position: relative;
+  padding: rem(62px) 0;
+  background-color: #F8FAF9;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: rem(136px);
+    height: rem(321px);
+    left: 0;
+    bottom: rem(-157px);
+  }
+}
+
+.media-section__title {
+  margin-bottom: 0;
+}

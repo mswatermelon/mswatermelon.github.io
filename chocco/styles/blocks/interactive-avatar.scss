@@ -5,7 +5,9 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  transition: border-color 300ms;
 
+  &:hover,
   &--active {
     border-color: #0f5a47;
   }
