@@ -1,0 +1,43 @@
+.reason {
+  text-align: center;
+
+  @include phablets {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.reason__illustration {
+  display: inline-block;
+  width: rem(126px);
+  height: rem(126px);
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: rem(20px);
+  flex-shrink: 0;
+
+  @include phablets {
+    margin-bottom: 0;
+    margin-right: rem(20px);
+  }
+}
+
+.reason__icon {
+  width: rem(68px);
+  height: rem(68px);
+  transform: translateY(40%);
+
+  @include phablets {
+    transform: translate(45%, 40%);
+  }
+}
+
+.reason__title {
+  font-weight: bold;
+  font-size: rem($m-small-font-size);
+  line-height: rem(32px);
+  margin-bottom: rem(18px);
+  color: #000000;
+}

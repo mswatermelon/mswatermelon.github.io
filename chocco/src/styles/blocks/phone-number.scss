@@ -1,0 +1,25 @@
+.phone-number {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.phone-number--green {
+  display: flex;
+  align-items: center;
+  color: $button-green;
+}
+
+.phone-number__icon {
+  width: rem(14px);
+  height: rem(15px);
+  fill: $white-color;
+}
+
+.phone-number__icon--green {
+  fill: $button-green;
+}
+
+.phone-number__text {
+  margin-left: rem(6px);
+}

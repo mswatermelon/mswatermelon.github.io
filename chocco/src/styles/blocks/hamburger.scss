@@ -1,0 +1,42 @@
+.hamburger {
+  width: 24px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 0;
+  z-index: 200;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--active{
+    .hamburger__line{
+      &:nth-child(1){
+        opacity:0;
+      }
+
+      &:nth-child(2){
+        transform:rotate(45deg);
+      }
+
+      &:nth-child(3){
+        transform:rotate(-45deg) translateY(-8px) translateX(5px);
+      }
+    }
+  }
+
+  @include tablets {
+    display: inline-flex;
+  }
+}
+
+.hamburger__line {
+  display: block;
+  background: $white-color;
+  height: 4px;
+  border-radius: 10px;
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+.team-section {
+  font-family: Alegreya Sans, sans-serif;
+  position: relative;
+
+  &:after {
+    content: '';
+    background: url('./images/content/strawberry.png') center center no-repeat;
+    position: absolute;
+    width: rem(104px);
+    height: rem(114px);
+    left: rem(32px);
+    bottom: rem(-32px);
+  }
+}
