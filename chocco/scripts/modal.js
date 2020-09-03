@@ -35,21 +35,18 @@ $(".form").submit((e) => {
                 phone: phone.val(),
                 comment: comment.val(),
                 to: to.val()
-            }
-        });
+            },
+            success: (data) => {
+                modal.removeClass("modal--error");
+                content.text(data.message);
+            },
+            error: (data) => {
+                const message = data.responseJSON.message;
 
+                content.text(message);
+                modal.addClass("modal--error");
+            },
 
-        modal.removeClass("modal--error");
-
-        request.done((data) => {
-            content.text(data.message);
-        });
-
-        request.fail((data) => {
-            const message = data.responseJSON.message;
-
-            content.text(message);
-            modal.addClass("modal--error");
         });
 
         request.always(() => {

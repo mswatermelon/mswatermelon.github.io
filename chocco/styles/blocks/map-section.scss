@@ -1,5 +1,15 @@
 .map-section {
+  position: relative;
+  padding: 0;
+}
+
+.map-section__container {
   width: 100%;
-  background: url("../images/content/map.png") center center no-repeat;
-  background-size: cover;
+  height: 100%;
+  margin: 0;
+  max-width: unset;
+}
+
+.map-section__map {
+  height: 100%;
 }

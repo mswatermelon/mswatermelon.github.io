@@ -1,0 +1,54 @@
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  height: 100%;
+}
+.player__elem {
+  height: 100%;
+}
+.player__wrapper {
+  height: 100%;
+}
+.player__splash {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/content/video_bckgr.jpg") center center/cover no-repeat;
+}
+.player__splash:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/content/play.png");
+  width: 82px;
+  height: 118px;
+}
+.player--active .player__splash {
+  display: none;
+}
+.player--paused .player__start {
+  width: 14px;
+  height: 22px;
+  border: none;
+}
+.player--paused .player__start:after, .player--paused .player__start:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  background: #626262;
+}
+.player--paused .player__start:after {
+  right: 0;
+}
+.player--paused .player__start:before {
+  left: 0;
+}

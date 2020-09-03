@@ -19,21 +19,21 @@
     display: flex;
     background: center center /cover no-repeat;
 
-    &_milk {
+    &_milk .types__item-title{
       background-image: url("../images/content/milk.png");
     }
 
-    &_honey {
+    &_honey .types__item-title{
       background-image: url("../images/content/honey.png");
     }
 
-    &_berry {
+    &_berry .types__item-title{
       background-image: url("../images/content/berry.png");
     }
 
     &-title {
       position: relative;
-      min-width: 80px;
+      min-width: 102px;
       height: 100%;
 
       & span {
